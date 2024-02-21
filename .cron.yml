@@ -5,6 +5,7 @@ steps:
       - apt update
       - apt install jq curl git -y
       - (date +%s; curl --silent 'https://min-api.cryptocompare.com/data/price?fsym=XMR&tsyms=USD' | jq .USD) | xargs | tr ' ' ',' >> data/XMRxUSD.csv
+      - dart pub get
       - dart run bin/xmr_usd.dart
       - dart run bin/fetch_fiat_ofxcom.dart
       - git add data/XMRxUSD.csv
