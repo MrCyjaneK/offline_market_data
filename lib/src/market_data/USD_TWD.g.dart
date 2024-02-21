@@ -11,7 +11,7 @@ class CurrencyDataUSDxTWD implements CurrencyData {
   @override
   final String source = "ofx.com";
   @override
-  final String information = "Data fetched on 2024-02-21T18:39:38.308139";
+  final String information = "Data fetched on 2024-02-21T18:42:51.411080";
 
   @override
   Map<int, double> prices = {
@@ -10172,6 +10172,7 @@ class CurrencyDataUSDxTWD implements CurrencyData {
     1708214400000: 31.3482,
     1708300800000: 31.415,
     1708387200000: 31.4485,
+    1708473600000: 31.5403,
   };
 
   @override

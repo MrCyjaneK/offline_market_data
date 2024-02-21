@@ -11,7 +11,7 @@ class CurrencyDataUSDxJPY implements CurrencyData {
   @override
   final String source = "ofx.com";
   @override
-  final String information = "Data fetched on 2024-02-21T18:39:38.308139";
+  final String information = "Data fetched on 2024-02-21T18:42:51.411080";
 
   @override
   Map<int, double> prices = {
@@ -10893,7 +10893,6 @@ class CurrencyDataUSDxJPY implements CurrencyData {
     1708214400000: 150.225,
     1708300800000: 150.173,
     1708387200000: 149.872,
-    1708473600000: 150.2755,
   };
 
   @override
