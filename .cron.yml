@@ -13,6 +13,10 @@ steps:
       - git config --global user.name "woodpecker ci"
       - git config --global user.email "woodpecker@mrcyjanek.net"
       - git commit -m "[skip ci] automatic price update"
+      - ./version.sh
+      - dart pub token add https://git.mrcyjanek.net/api/packages/mrcyjanek/pub/ --env-var=PAT_SECRET_PACKAGE
+      - dart pub publish --skip-validation
+    secrets: [ PAT_SECRET_PACKAGE ]
     when:
       event: cron
   - name: push commit
