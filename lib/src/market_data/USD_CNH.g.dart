@@ -11,7 +11,7 @@ class CurrencyDataUSDxCNH implements CurrencyData {
   @override
   final String source = "ofx.com";
   @override
-  final String information = "Data fetched on 2024-02-21T18:52:38.901899";
+  final String information = "Data fetched on 2024-02-21T18:39:38.308139";
 
   @override
   Map<int, double> prices = {
