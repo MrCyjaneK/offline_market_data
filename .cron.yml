@@ -18,8 +18,10 @@ steps:
   - name: push commit
     image: appleboy/drone-git-push
     settings:
-      remote_name: origin
+      remote: ssh://gitea@git.mrcyjanek.net:2222/mrcyjanek/offline_market_data.git
       branch: master
       local_ref: master
+      ssh_key:
+        from_secret: ssh_key
     when:
       event: cron
