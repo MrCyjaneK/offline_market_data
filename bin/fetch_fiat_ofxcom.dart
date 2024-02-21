@@ -21,7 +21,7 @@ class CurrencyData%sx%s implements CurrencyData {
   @override
   final String source = "%s";
   @override
-  final String information = "Data fetched on ${DateTime.now().toIso8601String()}";
+  final String information = "";
 
   @override
   Map<int, double> prices = {
@@ -36,7 +36,8 @@ class CurrencyData%sx%s implements CurrencyData {
       .toList();
   
   @override
-  double getPrice(DateTime? date) {
+  double? getPrice(DateTime? date) {
+    if (prices.isEmpty || dates.isEmpty) return null;
     date ??= DateTime.now();
     final closest = dates.reduce(
         (a, b) => a.difference(date!).abs() < b.difference(date).abs() ? a : b);
@@ -47,7 +48,7 @@ class CurrencyData%sx%s implements CurrencyData {
 
 Future<void> main() async {
   for (var cur in usdPairs.keys) {
-    if (cur == "USD") return;
+    if (cur == "USD") continue;
     dump("USD", cur);
   }
 }

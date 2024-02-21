@@ -11,7 +11,7 @@ class CurrencyDataUSDxCHF implements CurrencyData {
   @override
   final String source = "ofx.com";
   @override
-  final String information = "Data fetched on 2024-02-21T18:58:59.212886";
+  final String information = "";
 
   @override
   Map<int, double> prices = {
@@ -10973,7 +10973,8 @@ class CurrencyDataUSDxCHF implements CurrencyData {
       .toList();
   
   @override
-  double getPrice(DateTime? date) {
+  double? getPrice(DateTime? date) {
+    if (prices.isEmpty || dates.isEmpty) return null;
     date ??= DateTime.now();
     final closest = dates.reduce(
         (a, b) => a.difference(date!).abs() < b.difference(date).abs() ? a : b);

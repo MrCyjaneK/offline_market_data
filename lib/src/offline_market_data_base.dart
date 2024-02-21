@@ -46,6 +46,12 @@ import 'package:offline_market_data/src/market_data/USD_TOP.g.dart';
 import 'package:offline_market_data/src/market_data/USD_TRY.g.dart';
 import 'package:offline_market_data/src/market_data/USD_TWD.g.dart';
 import 'package:offline_market_data/src/market_data/USD_TZS.g.dart';
+import 'package:offline_market_data/src/market_data/USD_VND.g.dart';
+import 'package:offline_market_data/src/market_data/USD_VUV.g.dart';
+import 'package:offline_market_data/src/market_data/USD_WST.g.dart';
+import 'package:offline_market_data/src/market_data/USD_XOF.g.dart';
+import 'package:offline_market_data/src/market_data/USD_XPF.g.dart';
+import 'package:offline_market_data/src/market_data/USD_ZAR.g.dart';
 
 final usdPairs = {
   "AED": CurrencyDataUSDxAED(),
@@ -97,12 +103,12 @@ final usdPairs = {
   "TWD": CurrencyDataUSDxTWD(),
   "TZS": CurrencyDataUSDxTZS(),
   "USD": null,
-  "VND": null, //CurrencyDataUSDxVND(),
-  "VUV": null, //CurrencyDataUSDxVUV(),
-  "WST": null, //CurrencyDataUSDxWST(),
-  "XOF": null, //CurrencyDataUSDxXOF(),
-  "XPF": null, //CurrencyDataUSDxXPF(),
-  "ZAR": null, //CurrencyDataUSDxZAR()
+  "VND": CurrencyDataUSDxVND(),
+  "VUV": CurrencyDataUSDxVUV(),
+  "WST": CurrencyDataUSDxWST(),
+  "XOF": CurrencyDataUSDxXOF(),
+  "XPF": CurrencyDataUSDxXPF(),
+  "ZAR": CurrencyDataUSDxZAR()
 };
 
 class CurrencyData {
@@ -110,5 +116,5 @@ class CurrencyData {
   final String information = "";
   final Map<int, double> prices = {};
   final List<DateTime> dates = [];
-  double getPrice(DateTime? date) => 0;
+  double? getPrice(DateTime? date) => 0;
 }
