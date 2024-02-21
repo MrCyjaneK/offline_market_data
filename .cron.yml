@@ -1,3 +1,8 @@
+clone:
+  git:
+    image: woodpeckerci/plugin-git
+    settings:
+      partial: false
 steps:
   - name: update price
     image: dart:stable-sdk
