@@ -11,7 +11,7 @@ class CurrencyDataXMRxUSD implements CurrencyData {
   @override
   final String source = "various data sources";
   @override
-  final String information = "Data fetched on 2024-02-21T18:42:30.901176";
+  final String information = "Data fetched on 2024-02-21T18:58:39.365457";
 
   @override
   Map<int, double> prices = {
@@ -3580,6 +3580,7 @@ class CurrencyDataXMRxUSD implements CurrencyData {
     1708538295: 118.34,
     1708540733: 118.82,
     1708540924: 118.85,
+    1708541890: 119.2,
   };
 
   @override
