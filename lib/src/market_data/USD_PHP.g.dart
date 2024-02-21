@@ -7862,7 +7862,6 @@ class CurrencyDataUSDxPHP implements CurrencyData {
     1708214400000: 55.97,
     1708300800000: 56.015,
     1708387200000: 55.939,
-    1708473600000: 55.9365,
   };
 
   @override

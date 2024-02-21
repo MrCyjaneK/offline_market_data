@@ -11,7 +11,7 @@ class CurrencyDataXMRxUSD implements CurrencyData {
   @override
   final String source = "various data sources";
   @override
-  final String information = "Data fetched on 2024-02-21T18:58:39.365457";
+  final String information = "";
 
   @override
   Map<int, double> prices = {
@@ -3581,6 +3581,7 @@ class CurrencyDataXMRxUSD implements CurrencyData {
     1708540733: 118.82,
     1708540924: 118.85,
     1708541890: 119.2,
+    1708548030: 119.8,
   };
 
   @override
@@ -3592,7 +3593,8 @@ class CurrencyDataXMRxUSD implements CurrencyData {
       .toList();
   
   @override
-  double getPrice(DateTime? date) {
+  double? getPrice(DateTime? date) {
+    if (prices.isEmpty || dates.isEmpty) return null;
     date ??= DateTime.now();
     final closest = dates.reduce(
         (a, b) => a.difference(date!).abs() < b.difference(date).abs() ? a : b);
