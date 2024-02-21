@@ -1,0 +1,24 @@
+steps:
+  - name: update price
+    image: dart:stable-sdk
+    commands:
+      - apt update
+      - apt install jq curl git -y
+      - (date +%s; curl --silent 'https://min-api.cryptocompare.com/data/price?fsym=XMR&tsyms=USD' | jq .USD) | xargs | tr ' ' ',' >> data/XMRxUSD.csv
+      - dart run bin/xmr_usd.dart
+      - dart run bin/fetch_fiat_ofxcom.dart
+      - git add data/XMRxUSD.csv
+      - git add lib/src/market_data
+      - git config --global user.name "woodpecker ci"
+      - git config --global user.email "woodpecker@mrcyjanek.net"
+      - git commit -m "[skip ci] automatic price update"
+    when:
+      event: cron
+  - name: push commit
+    image: appleboy/drone-git-push
+    settings:
+      remote_name: origin
+      branch: master
+      local_ref: master
+    when:
+      event: cron
