@@ -15,7 +15,6 @@ class CurrencyDataUSDxXPF implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in r"""
     970444800000: 130.42,
     970531200000: 130.67386,
     970617600000: 131.19312,
@@ -6806,12 +6805,6 @@ class CurrencyDataUSDxXPF implements CurrencyData {
     1708300800000: 111.15,
     1708387200000: 111.15,
     1708473600000: 110.7,
-
-  """
-        .trim()
-        .split("\n"))
-      int.parse(v.toString().trim().split(":")[0].trim()): double.parse(
-          v.toString().trim().split(":")[1].replaceAll(",", "").trim())
   };
 
   @override

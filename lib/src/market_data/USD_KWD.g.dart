@@ -15,7 +15,6 @@ class CurrencyDataUSDxKWD implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in r"""
     951350400000: 0.30618876,
     951436800000: 0.30634189,
     951696000000: 0.30680999,
@@ -7787,12 +7786,6 @@ class CurrencyDataUSDxKWD implements CurrencyData {
     1708214400000: 0.30797,
     1708300800000: 0.30796,
     1708387200000: 0.30775,
-
-  """
-        .trim()
-        .split("\n"))
-      int.parse(v.toString().trim().split(":")[0].trim()): double.parse(
-          v.toString().trim().split(":")[1].replaceAll(",", "").trim())
   };
 
   @override

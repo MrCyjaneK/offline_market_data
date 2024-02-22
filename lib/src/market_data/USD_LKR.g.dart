@@ -15,7 +15,6 @@ class CurrencyDataUSDxLKR implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in r"""
     631238400000: 40.017502,
     631324800000: 40.017502,
     631411200000: 40.017502,
@@ -10023,13 +10022,6 @@ class CurrencyDataUSDxLKR implements CurrencyData {
     1708214400000: 312.5121781489,
     1708300800000: 312.562911972,
     1708387200000: 311.9425793008,
-    1708473600000: 311.5286143533,
-
-  """
-        .trim()
-        .split("\n"))
-      int.parse(v.toString().trim().split(":")[0].trim()): double.parse(
-          v.toString().trim().split(":")[1].replaceAll(",", "").trim())
   };
 
   @override

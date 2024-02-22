@@ -25,14 +25,7 @@ class CurrencyData%sx%s implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in r\"\"\"
-%s
-  \"\"\"
-        .trim()
-        .split("\\n"))
-      int.parse(v.toString().trim().split(":")[0].trim()): double.parse(
-          v.toString().trim().split(":")[1].replaceAll(",", "").trim())
-  };
+%s  };
 
   @override
   late List<DateTime> dates = prices
@@ -61,6 +54,7 @@ Future<void> main() async {
 }
 
 Future<void> dump(String base, String alt) async {
+  print("dump($base, $alt)");
   final url =
       "https://api.ofx.com/PublicSite.ApiService/SpotRateHistory/allTime/$base/$alt?DecimalPlaces=15&ReportingInterval=daily&format=json";
   final uri = Uri.parse(url);

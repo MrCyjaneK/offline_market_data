@@ -15,7 +15,6 @@ class CurrencyDataUSDxPHP implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in r"""
     951350400000: 40.816319,
     951436800000: 40.779598,
     951696000000: 40.896351,
@@ -7864,12 +7863,6 @@ class CurrencyDataUSDxPHP implements CurrencyData {
     1708300800000: 56.015,
     1708387200000: 55.939,
     1708473600000: 55.9365,
-
-  """
-        .trim()
-        .split("\n"))
-      int.parse(v.toString().trim().split(":")[0].trim()): double.parse(
-          v.toString().trim().split(":")[1].replaceAll(",", "").trim())
   };
 
   @override
