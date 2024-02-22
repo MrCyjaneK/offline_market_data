@@ -10944,7 +10944,6 @@ class CurrencyDataUSDxDKK implements CurrencyData {
     1708214400000: 6.917185,
     1708300800000: 6.9218,
     1708387200000: 6.891365,
-    1708473600000: 6.89241,
   };
 
   @override

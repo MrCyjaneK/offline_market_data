@@ -10280,6 +10280,7 @@ class CurrencyDataUSDxCNY implements CurrencyData {
     1708214400000: 7.1196,
     1708300800000: 7.1986,
     1708387200000: 7.1918,
+    1708473600000: 7.1898,
   };
 
   @override

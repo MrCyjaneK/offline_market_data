@@ -10952,7 +10952,6 @@ class CurrencyDataUSDxNOK implements CurrencyData {
     1708214400000: 10.448405,
     1708300800000: 10.4973,
     1708387200000: 10.47692,
-    1708473600000: 10.48181,
   };
 
   @override

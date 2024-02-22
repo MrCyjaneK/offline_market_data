@@ -3583,6 +3583,7 @@ class CurrencyDataXMRxUSD implements CurrencyData {
     1708541890: 119.2,
     1708548030: 119.8,
     1708560459: 123.06,
+    1708581890: 123.78,
   };
 
   @override

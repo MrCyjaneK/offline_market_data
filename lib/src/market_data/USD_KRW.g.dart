@@ -10321,6 +10321,7 @@ class CurrencyDataUSDxKRW implements CurrencyData {
     1708214400000: 1332.58,
     1708300800000: 1335.185,
     1708387200000: 1332.975,
+    1708473600000: 1334.83,
   };
 
   @override
