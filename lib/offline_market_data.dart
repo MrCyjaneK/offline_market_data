@@ -6,7 +6,6 @@ library;
 export 'src/offline_market_data_base.dart';
 export 'package:offline_market_data/src/market_data/USD_AED.g.dart';
 export 'package:offline_market_data/src/market_data/USD_AUD.g.dart';
-export 'package:offline_market_data/src/market_data/USD_AZN.g.dart';
 export 'package:offline_market_data/src/market_data/USD_BGN.g.dart';
 export 'package:offline_market_data/src/market_data/USD_BHD.g.dart';
 export 'package:offline_market_data/src/market_data/USD_BND.g.dart';
