@@ -15,7 +15,7 @@ class CurrencyDataUSDxHUF implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     970444800000: 299.11023,
     970531200000: 299.92999,
     970617600000: 300.68976,
@@ -7654,7 +7654,6 @@ class CurrencyDataUSDxHUF implements CurrencyData {
     1708214400000: 361.0155,
     1708300800000: 360.927,
     1708387200000: 358.2125,
-    1708473600000: 358.1015,
 
   """
         .trim()

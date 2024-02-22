@@ -15,7 +15,7 @@ class CurrencyDataUSDxPHP implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     951350400000: 40.816319,
     951436800000: 40.779598,
     951696000000: 40.896351,

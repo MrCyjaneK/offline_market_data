@@ -15,7 +15,7 @@ class CurrencyDataUSDxKWD implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     951350400000: 0.30618876,
     951436800000: 0.30634189,
     951696000000: 0.30680999,

@@ -25,7 +25,7 @@ class CurrencyData%sx%s implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in \"\"\"
+    for (var v in r\"\"\"
 %s
   \"\"\"
         .trim()

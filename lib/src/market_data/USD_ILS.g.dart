@@ -15,7 +15,7 @@ class CurrencyDataUSDxILS implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     951350400000: 4.0374961,
     951436800000: 4.0353813,
     951696000000: 4.0331035,
@@ -7802,6 +7802,7 @@ class CurrencyDataUSDxILS implements CurrencyData {
     1708214400000: 3.606,
     1708300800000: 3.63485,
     1708387200000: 3.6725,
+    1708473600000: 3.679115,
 
   """
         .trim()

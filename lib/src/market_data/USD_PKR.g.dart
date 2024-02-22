@@ -15,7 +15,7 @@ class CurrencyDataUSDxPKR implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     970444800000: 58.129051,
     970531200000: 59.299999,
     970617600000: 59.255924,

@@ -15,7 +15,7 @@ class CurrencyDataUSDxPEN implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     970444800000: 3.49895,
     970531200000: 3.4892545,
     970617600000: 3.4908018,

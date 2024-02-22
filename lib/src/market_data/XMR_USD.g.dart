@@ -15,7 +15,7 @@ class CurrencyDataXMRxUSD implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     1400630400: 1.72022,
     1400716800: 2.14173,
     1400803200: 2.86743,
@@ -3600,7 +3600,7 @@ class CurrencyDataXMRxUSD implements CurrencyData {
       })
       .keys
       .toList();
-
+  
   @override
   double? getPrice(DateTime? date) {
     if (prices.isEmpty || dates.isEmpty) return null;

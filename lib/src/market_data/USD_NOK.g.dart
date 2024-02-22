@@ -15,7 +15,7 @@ class CurrencyDataUSDxNOK implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     631238400000: 6.6374998,
     631324800000: 6.6574998,
     631411200000: 6.5700002,

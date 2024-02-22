@@ -15,7 +15,7 @@ class CurrencyDataUSDxOMR implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     970444800000: 0.38481602,
     970531200000: 0.385124,
     970617600000: 0.38496,
@@ -7655,6 +7655,7 @@ class CurrencyDataUSDxOMR implements CurrencyData {
     1708214400000: 0.3849686848,
     1708300800000: 0.3849457473,
     1708387200000: 0.3848867477,
+    1708473600000: 0.3849535635,
 
   """
         .trim()

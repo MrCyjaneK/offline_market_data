@@ -15,7 +15,7 @@ class CurrencyDataUSDxSEK implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     631238400000: 6.23,
     631324800000: 6.27,
     631411200000: 6.1760001,

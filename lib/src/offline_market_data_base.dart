@@ -1,6 +1,5 @@
 import 'package:offline_market_data/src/market_data/USD_AED.g.dart';
 import 'package:offline_market_data/src/market_data/USD_AUD.g.dart';
-import 'package:offline_market_data/src/market_data/USD_AZN.g.dart';
 import 'package:offline_market_data/src/market_data/USD_BGN.g.dart';
 import 'package:offline_market_data/src/market_data/USD_BHD.g.dart';
 import 'package:offline_market_data/src/market_data/USD_BND.g.dart';

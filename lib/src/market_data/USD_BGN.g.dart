@@ -15,7 +15,7 @@ class CurrencyDataUSDxBGN implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     970444800000: 2.2135787,
     970531200000: 2.2254121,
     970617600000: 2.2261093,
@@ -7638,7 +7638,6 @@ class CurrencyDataUSDxBGN implements CurrencyData {
     1708214400000: 1.81733,
     1708300800000: 1.8155457989,
     1708387200000: 1.807825,
-    1708473600000: 1.8088,
 
   """
         .trim()

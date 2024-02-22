@@ -15,7 +15,7 @@ class CurrencyDataUSDxMGA implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     1104796800000: 1893.18008,
     1104883200000: 1700.04296,
     1104969600000: 1700.04296,
@@ -6560,7 +6560,6 @@ class CurrencyDataUSDxMGA implements CurrencyData {
     1708214400000: 4545.5810716771,
     1708300800000: 4535.6501732528,
     1708387200000: 4537.5,
-    1708473600000: 4546,
 
   """
         .trim()

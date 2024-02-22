@@ -15,7 +15,7 @@ class CurrencyDataUSDxTZS implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     970444800000: 797.53918,
     970531200000: 796.92029,
     970617600000: 795.92041,
@@ -7604,6 +7604,7 @@ class CurrencyDataUSDxTZS implements CurrencyData {
     1708214400000: 2540.1994896775,
     1708300800000: 2550,
     1708387200000: 2535,
+    1708473600000: 2543,
 
   """
         .trim()

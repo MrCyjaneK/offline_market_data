@@ -15,7 +15,7 @@ class CurrencyDataUSDxXPF implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-    for (var v in """
+    for (var v in r"""
     970444800000: 130.42,
     970531200000: 130.67386,
     970617600000: 131.19312,
