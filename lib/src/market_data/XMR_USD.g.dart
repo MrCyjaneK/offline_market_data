@@ -3586,6 +3586,7 @@ class CurrencyDataXMRxUSD implements CurrencyData {
     1708560459: 123.06,
     1708581890: 123.78,
     1708602424: 122.1,
+    1708603499: 122.64,
 
   """
         .trim()

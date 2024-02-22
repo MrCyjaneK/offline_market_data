@@ -7802,6 +7802,7 @@ class CurrencyDataUSDxILS implements CurrencyData {
     1708214400000: 3.606,
     1708300800000: 3.63485,
     1708387200000: 3.6725,
+    1708473600000: 3.679115,
 
   """
         .trim()

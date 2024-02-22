@@ -7793,6 +7793,7 @@ class CurrencyDataUSDxBRL implements CurrencyData {
     1708214400000: 4.9671,
     1708300800000: 4.9614,
     1708387200000: 4.9339,
+    1708473600000: 4.9273,
 
   """
         .trim()

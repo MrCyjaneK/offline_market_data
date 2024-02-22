@@ -7803,7 +7803,6 @@ class CurrencyDataUSDxAED implements CurrencyData {
     1708214400000: 3.6729,
     1708300800000: 3.672855,
     1708387200000: 3.67295,
-    1708473600000: 3.673,
 
   """
         .trim()
