@@ -56,7 +56,6 @@ import 'package:offline_market_data/src/market_data/USD_ZAR.g.dart';
 final usdPairs = {
   "AED": CurrencyDataUSDxAED(),
   "AUD": CurrencyDataUSDxAUD(),
-  "AZN": CurrencyDataUSDxAZN(),
   "BGN": CurrencyDataUSDxBGN(),
   "BHD": CurrencyDataUSDxBHD(),
   "BND": CurrencyDataUSDxBND(),

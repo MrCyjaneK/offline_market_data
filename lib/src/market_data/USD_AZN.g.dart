@@ -15,6 +15,13 @@ class CurrencyDataUSDxAZN implements CurrencyData {
 
   @override
   Map<int, double> prices = {
+    for (var v in """
+
+  """
+        .trim()
+        .split("\n"))
+      int.parse(v.toString().trim().split(":")[0].trim()): double.parse(
+          v.toString().trim().split(":")[1].replaceAll(",", "").trim())
   };
 
   @override

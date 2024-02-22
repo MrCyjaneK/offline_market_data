@@ -15,6 +15,7 @@ class CurrencyDataUSDxFJD implements CurrencyData {
 
   @override
   Map<int, double> prices = {
+    for (var v in """
     951350400000: 2.0439224,
     951436800000: 2.0424924,
     951696000000: 2.0565262,
@@ -8081,6 +8082,12 @@ class CurrencyDataUSDxFJD implements CurrencyData {
     1708300800000: 2.24225,
     1708387200000: 2.26,
     1708473600000: 2.2605,
+
+  """
+        .trim()
+        .split("\n"))
+      int.parse(v.toString().trim().split(":")[0].trim()): double.parse(
+          v.toString().trim().split(":")[1].replaceAll(",", "").trim())
   };
 
   @override

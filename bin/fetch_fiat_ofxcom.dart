@@ -25,7 +25,14 @@ class CurrencyData%sx%s implements CurrencyData {
 
   @override
   Map<int, double> prices = {
-%s  };
+    for (var v in \"\"\"
+%s
+  \"\"\"
+        .trim()
+        .split("\\n"))
+      int.parse(v.toString().trim().split(":")[0].trim()): double.parse(
+          v.toString().trim().split(":")[1].replaceAll(",", "").trim())
+  };
 
   @override
   late List<DateTime> dates = prices
