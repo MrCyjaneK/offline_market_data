@@ -7787,6 +7787,7 @@ class CurrencyDataUSDxKWD implements CurrencyData {
     1708214400000: 0.30797,
     1708300800000: 0.30796,
     1708387200000: 0.30775,
+    1708473600000: 0.30773,
 
   """
         .trim()

@@ -8145,7 +8145,6 @@ class CurrencyDataUSDxIDR implements CurrencyData {
     1708214400000: 15655.6,
     1708300800000: 15635.95,
     1708387200000: 15654,
-    1708473600000: 15641.6,
 
   """
         .trim()

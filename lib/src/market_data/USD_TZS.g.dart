@@ -7604,7 +7604,6 @@ class CurrencyDataUSDxTZS implements CurrencyData {
     1708214400000: 2540.1994896775,
     1708300800000: 2550,
     1708387200000: 2535,
-    1708473600000: 2543,
 
   """
         .trim()
