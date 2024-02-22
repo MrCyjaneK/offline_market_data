@@ -6344,6 +6344,7 @@ class CurrencyDataUSDxTRY implements CurrencyData {
     1708214400000: 30.8416,
     1708300800000: 30.8735,
     1708387200000: 30.9215,
+    1708473600000: 31.004215,
   };
 
   @override

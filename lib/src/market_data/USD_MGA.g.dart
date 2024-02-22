@@ -6559,6 +6559,7 @@ class CurrencyDataUSDxMGA implements CurrencyData {
     1708214400000: 4545.5810716771,
     1708300800000: 4535.6501732528,
     1708387200000: 4537.5,
+    1708473600000: 4546,
   };
 
   @override

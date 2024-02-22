@@ -10172,6 +10172,7 @@ class CurrencyDataUSDxTWD implements CurrencyData {
     1708214400000: 31.3482,
     1708300800000: 31.415,
     1708387200000: 31.4485,
+    1708473600000: 31.5403,
   };
 
   @override

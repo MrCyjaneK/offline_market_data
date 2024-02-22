@@ -10580,6 +10580,7 @@ class CurrencyDataUSDxTHB implements CurrencyData {
     1708214400000: 35.749,
     1708300800000: 36.07,
     1708387200000: 35.9505,
+    1708473600000: 35.923,
   };
 
   @override

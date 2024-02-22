@@ -9442,6 +9442,7 @@ class CurrencyDataUSDxMXN implements CurrencyData {
     1708214400000: 17.0526,
     1708300800000: 17.0548,
     1708387200000: 17.04632,
+    1708473600000: 17.044955,
   };
 
   @override

@@ -10949,6 +10949,7 @@ class CurrencyDataUSDxNZD implements CurrencyData {
     1708214400000: 1.631854177,
     1708300800000: 1.627885,
     1708387200000: 1.618585,
+    1708473600000: 1.619705,
   };
 
   @override

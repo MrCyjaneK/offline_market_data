@@ -7653,6 +7653,7 @@ class CurrencyDataUSDxHUF implements CurrencyData {
     1708214400000: 361.0155,
     1708300800000: 360.927,
     1708387200000: 358.2125,
+    1708473600000: 358.1015,
   };
 
   @override

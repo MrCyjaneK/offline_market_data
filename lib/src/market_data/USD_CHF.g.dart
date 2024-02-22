@@ -10962,6 +10962,7 @@ class CurrencyDataUSDxCHF implements CurrencyData {
     1708214400000: 0.8807332169,
     1708300800000: 0.8819,
     1708387200000: 0.880355,
+    1708473600000: 0.88,
   };
 
   @override

@@ -8080,6 +8080,7 @@ class CurrencyDataUSDxFJD implements CurrencyData {
     1708214400000: 2.2442,
     1708300800000: 2.24225,
     1708387200000: 2.26,
+    1708473600000: 2.2605,
   };
 
   @override
